@@ -24,3 +24,6 @@
                
 4.  Use Constrant Layout
 5.  Use at least 4 different attributes in each type of view.
+
+![screenshot_20190214-213622](https://user-images.githubusercontent.com/32153064/52833218-6f7f6a80-30a1-11e9-9a47-dabaa1bfec8f.png)
+![screenshot_20190214-213635](https://user-images.githubusercontent.com/32153064/52833220-7312f180-30a1-11e9-9641-90904d345291.png)

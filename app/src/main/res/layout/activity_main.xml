@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etFirstNameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etLastNameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstNameInput" />
+
+    <EditText
+        android:id="@+id/etAddressInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLastNameInput" />
+
+    <EditText
+        android:id="@+id/etCityInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddressInput" />
+
+    <EditText
+        android:id="@+id/etStateInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="State"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCityInput" />
+
+    <EditText
+        android:id="@+id/etPostalCodeInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Postal Code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etStateInput" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClickHandler"
+        android:text="Click to Send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPostalCodeInput" />
+
+
+</android.support.constraint.ConstraintLayout>

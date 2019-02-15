@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/tvFirstNameDisplay"
+        android:layout_width="146dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:textColor="#162FBB"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvLastNameDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLastNameDisplay"
+        android:layout_width="171dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#162FBB"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvFirstNameDisplay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAddressDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:textColor="#162FBB"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvCityDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCityDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:layout_marginBottom="13dp"
+        android:textColor="#162FBB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvPostalCodeDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAddressDisplay" />
+
+    <TextView
+        android:id="@+id/tvStateDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#162FBB"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvPostalCodeDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/tvPostalCodeDisplay"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPostalCodeDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginRight="131dp"
+        android:textColor="#162FBB"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvStateDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddressDisplay" />
+
+
+</android.support.constraint.ConstraintLayout>
